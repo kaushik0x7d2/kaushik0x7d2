@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="./matrix.svg" alt="matrix rain" width="100%"/>
+<picture>
+  <img src="./matrix.svg" alt="" width="100%"/>
+</picture>
 
 </div>
 
