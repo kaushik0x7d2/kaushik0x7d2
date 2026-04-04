@@ -21,9 +21,3 @@
 
 > **[PROTAC Pipeline](https://github.com/kaushik0x7d2/protac-pipeline)** `Drug Discovery` `SE3` `Diffusion`
 > Automated PROTAC drug design pipeline — SE3 equivariant diffusion models with data leakage analysis
-
----
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=kaushik0x7d2&theme=github-dark-blue&hide_border=true&background=0D1117" height="165"/>
-</p>
