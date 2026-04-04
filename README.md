@@ -1,8 +1,6 @@
 ### Hi, I'm Kaushik
 
-Security researcher working on applied cryptography and systems security.
-
-**Current focus:** Hardening Fully Homomorphic Encryption (FHE) frameworks for production deployment — bridging the gap between cryptographic theory and secure software engineering.
+AI engineer who likes tinkering with all things AI — from model training to encrypted inference to drug discovery pipelines.
 
 #### Featured Work
 
@@ -12,6 +10,6 @@ Security researcher working on applied cryptography and systems security.
 
 #### Interests
 
-- Privacy-preserving machine learning (FHE, MPC)
-- Systems security and vulnerability analysis
-- Low-level systems programming
+- Privacy-preserving ML (FHE, secure inference)
+- AI for drug discovery
+- Systems programming
