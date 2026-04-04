@@ -2,14 +2,6 @@
 
 <img src="./matrix.svg" alt="matrix rain" width="100%"/>
 
-<br/>
-
-<img src="https://img.shields.io/badge/Python-00FF00?style=for-the-badge&logo=python&logoColor=black"/>
-<img src="https://img.shields.io/badge/PyTorch-00FF00?style=for-the-badge&logo=pytorch&logoColor=black"/>
-<img src="https://img.shields.io/badge/Go-00FF00?style=for-the-badge&logo=go&logoColor=black"/>
-<img src="https://img.shields.io/badge/C-00FF00?style=for-the-badge&logo=c&logoColor=black"/>
-<img src="https://img.shields.io/badge/CUDA-00FF00?style=for-the-badge&logo=nvidia&logoColor=black"/>
-
 </div>
 
 ---

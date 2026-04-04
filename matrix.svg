@@ -1,130 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
   <defs>
     <style>
-      .rain { font-family: 'Courier New', monospace; fill: #00FF00; font-size: 14px; }
-      .dim { opacity: 0.15; }
-      .mid { opacity: 0.3; }
-      .bright { opacity: 0.5; }
-      .lead { opacity: 0.7; fill: #AAFFAA; }
-      @keyframes r1 { 0% { transform: translateY(-200px); } 100% { transform: translateY(300px); } }
-      @keyframes r2 { 0% { transform: translateY(-180px); } 100% { transform: translateY(320px); } }
-      @keyframes r3 { 0% { transform: translateY(-220px); } 100% { transform: translateY(280px); } }
-      @keyframes r4 { 0% { transform: translateY(-160px); } 100% { transform: translateY(340px); } }
-      @keyframes r5 { 0% { transform: translateY(-240px); } 100% { transform: translateY(260px); } }
-      .a1 { animation: r1 3.0s linear infinite; }
-      .a2 { animation: r2 3.5s linear infinite; }
-      .a3 { animation: r3 2.8s linear infinite; }
-      .a4 { animation: r4 4.0s linear infinite; }
-      .a5 { animation: r5 3.2s linear infinite; }
-      .a6 { animation: r1 2.5s linear infinite; }
-      .a7 { animation: r2 4.2s linear infinite; }
-      .a8 { animation: r3 3.7s linear infinite; }
-      .a9 { animation: r4 2.9s linear infinite; }
-      .a10 { animation: r5 3.4s linear infinite; }
-      .a11 { animation: r1 4.5s linear infinite; }
-      .a12 { animation: r2 2.6s linear infinite; }
-      .a13 { animation: r3 3.9s linear infinite; }
-      .a14 { animation: r4 3.1s linear infinite; }
-      .a15 { animation: r5 4.3s linear infinite; }
-      .a16 { animation: r1 2.7s linear infinite; }
-      .a17 { animation: r2 3.6s linear infinite; }
-      .a18 { animation: r3 4.1s linear infinite; }
-      .a19 { animation: r4 2.4s linear infinite; }
-      .a20 { animation: r5 3.3s linear infinite; }
-
-      /* Typing animation */
-      @keyframes typing {
-        0%, 18% { content: "> encrypted inference on neural networks"; }
-        25%, 43% { content: "> hardening FHE frameworks"; }
-        50%, 68% { content: "> AI-driven drug discovery"; }
-        75%, 93% { content: "> wake up, Neo..."; }
-      }
-      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
-      @keyframes line1 {
-        0%, 24% { opacity: 1; }
-        25%, 100% { opacity: 0; }
-      }
-      @keyframes line2 {
-        0%, 24% { opacity: 0; }
-        25%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
-      @keyframes line3 {
-        0%, 49% { opacity: 0; }
-        50%, 74% { opacity: 1; }
-        75%, 100% { opacity: 0; }
-      }
-      @keyframes line4 {
-        0%, 74% { opacity: 0; }
-        75%, 100% { opacity: 1; }
-      }
-      @keyframes typeIn1 {
-        0% { width: 0; } 20% { width: 395px; } 24% { width: 395px; } 25% { width: 0; } 100% { width: 0; }
-      }
-      @keyframes typeIn2 {
-        0%, 24% { width: 0; } 25% { width: 0; } 45% { width: 275px; } 49% { width: 275px; } 50% { width: 0; } 100% { width: 0; }
-      }
-      @keyframes typeIn3 {
-        0%, 49% { width: 0; } 50% { width: 0; } 70% { width: 265px; } 74% { width: 265px; } 75% { width: 0; } 100% { width: 0; }
-      }
-      @keyframes typeIn4 {
-        0%, 74% { width: 0; } 75% { width: 0; } 95% { width: 185px; } 100% { width: 185px; }
-      }
-      .cursor { animation: blink 0.8s step-end infinite; fill: #00FF00; }
-      .center-text { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; fill: #00FF00; font-size: 20px; font-weight: 600; }
-      .tagline { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; fill: #00FF00; font-size: 13px; opacity: 0.8; }
+      .r { font-family: 'MS Gothic', 'Courier New', monospace; fill: #00FF00; font-size: 15px; }
+      @keyframes f1 { 0%{transform:translateY(-300px)}100%{transform:translateY(350px)} }
+      @keyframes f2 { 0%{transform:translateY(-250px)}100%{transform:translateY(400px)} }
+      @keyframes f3 { 0%{transform:translateY(-350px)}100%{transform:translateY(300px)} }
+      @keyframes f4 { 0%{transform:translateY(-200px)}100%{transform:translateY(450px)} }
+      @keyframes f5 { 0%{transform:translateY(-280px)}100%{transform:translateY(370px)} }
+      @keyframes f6 { 0%{transform:translateY(-320px)}100%{transform:translateY(330px)} }
+      @keyframes f7 { 0%{transform:translateY(-180px)}100%{transform:translateY(470px)} }
+      @keyframes f8 { 0%{transform:translateY(-260px)}100%{transform:translateY(390px)} }
+      .s1{animation:f1 2.8s linear infinite}.s2{animation:f2 3.4s linear infinite}.s3{animation:f3 2.5s linear infinite}
+      .s4{animation:f4 4.0s linear infinite}.s5{animation:f5 3.1s linear infinite}.s6{animation:f6 2.3s linear infinite}
+      .s7{animation:f7 3.8s linear infinite}.s8{animation:f8 2.9s linear infinite}
+      .s9{animation:f1 3.6s linear infinite}.s10{animation:f2 2.2s linear infinite}
+      .s11{animation:f3 3.3s linear infinite}.s12{animation:f4 2.7s linear infinite}
+      .s13{animation:f5 4.2s linear infinite}.s14{animation:f6 3.0s linear infinite}
+      .s15{animation:f7 2.6s linear infinite}.s16{animation:f8 3.5s linear infinite}
+      .s17{animation:f1 4.4s linear infinite}.s18{animation:f2 2.4s linear infinite}
+      .s19{animation:f3 3.7s linear infinite}.s20{animation:f4 2.1s linear infinite}
+      .s21{animation:f5 3.9s linear infinite}.s22{animation:f6 2.8s linear infinite}
+      .s23{animation:f7 3.2s linear infinite}.s24{animation:f8 4.1s linear infinite}
+      .s25{animation:f1 2.3s linear infinite}.s26{animation:f2 3.6s linear infinite}
+      .s27{animation:f3 2.9s linear infinite}.s28{animation:f4 3.4s linear infinite}
+      .s29{animation:f5 2.5s linear infinite}.s30{animation:f6 4.3s linear infinite}
+      .d1{opacity:.08}.d2{opacity:.12}.d3{opacity:.18}.d4{opacity:.25}.d5{opacity:.35}
+      .d6{opacity:.45}.d7{opacity:.6}.d8{opacity:.75;fill:#33FF33}.d9{opacity:.9;fill:#88FF88}.d10{opacity:1;fill:#CCFFCC}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes fade1{0%,22%{opacity:1}25%,100%{opacity:0}}
+      @keyframes fade2{0%,24%{opacity:0}25%,47%{opacity:1}50%,100%{opacity:0}}
+      @keyframes fade3{0%,49%{opacity:0}50%,72%{opacity:1}75%,100%{opacity:0}}
+      @keyframes fade4{0%,74%{opacity:0}75%,97%{opacity:1}100%{opacity:0}}
+      .t{font-family:'JetBrains Mono','Fira Code','Courier New',monospace;fill:#00FF00;font-size:20px;font-weight:600}
+      .sub{font-family:'JetBrains Mono','Fira Code','Courier New',monospace;fill:#00FF00;font-size:14px;opacity:.7}
+      .cur{animation:blink .7s step-end infinite;fill:#00FF00}
+      .l1{animation:fade1 12s linear infinite}
+      .l2{animation:fade2 12s linear infinite}
+      .l3{animation:fade3 12s linear infinite}
+      .l4{animation:fade4 12s linear infinite}
     </style>
   </defs>
-  <rect width="800" height="280" fill="#0D1117"/>
+  <rect width="800" height="300" fill="#0D1117"/>
 
-  <!-- Rain columns (behind text) -->
-  <g class="a1"><text class="rain dim" x="10" y="0">ア</text><text class="rain dim" x="10" y="18">0</text><text class="rain mid" x="10" y="36">カ</text><text class="rain mid" x="10" y="54">1</text><text class="rain bright" x="10" y="72">ネ</text><text class="rain lead" x="10" y="90">7</text></g>
-  <g class="a2"><text class="rain dim" x="50" y="0">9</text><text class="rain dim" x="50" y="18">タ</text><text class="rain mid" x="50" y="36">3</text><text class="rain mid" x="50" y="54">ハ</text><text class="rain bright" x="50" y="72">ム</text><text class="rain lead" x="50" y="90">F</text></g>
-  <g class="a3"><text class="rain dim" x="90" y="0">マ</text><text class="rain dim" x="90" y="18">2</text><text class="rain mid" x="90" y="36">ラ</text><text class="rain mid" x="90" y="54">H</text><text class="rain bright" x="90" y="72">5</text><text class="rain lead" x="90" y="90">E</text></g>
-  <g class="a4"><text class="rain dim" x="130" y="0">ヨ</text><text class="rain dim" x="130" y="18">A</text><text class="rain mid" x="130" y="36">6</text><text class="rain mid" x="130" y="54">ニ</text><text class="rain bright" x="130" y="72">ウ</text><text class="rain lead" x="130" y="90">0</text></g>
-  <g class="a5"><text class="rain dim" x="170" y="0">8</text><text class="rain dim" x="170" y="18">サ</text><text class="rain mid" x="170" y="36">ト</text><text class="rain mid" x="170" y="54">B</text><text class="rain bright" x="170" y="72">4</text><text class="rain lead" x="170" y="90">キ</text></g>
-  <g class="a6"><text class="rain dim" x="210" y="0">リ</text><text class="rain dim" x="210" y="18">C</text><text class="rain mid" x="210" y="36">1</text><text class="rain mid" x="210" y="54">オ</text><text class="rain bright" x="210" y="72">セ</text><text class="rain lead" x="210" y="90">3</text></g>
-  <g class="a7"><text class="rain dim" x="250" y="0">D</text><text class="rain dim" x="250" y="18">ソ</text><text class="rain mid" x="250" y="36">7</text><text class="rain mid" x="250" y="54">ナ</text><text class="rain bright" x="250" y="72">テ</text><text class="rain lead" x="250" y="90">E</text></g>
-  <g class="a8"><text class="rain dim" x="290" y="0">コ</text><text class="rain dim" x="290" y="18">5</text><text class="rain mid" x="290" y="36">F</text><text class="rain mid" x="290" y="54">ミ</text><text class="rain bright" x="290" y="72">2</text><text class="rain lead" x="290" y="90">ワ</text></g>
-  <g class="a9"><text class="rain dim" x="330" y="0">ヌ</text><text class="rain dim" x="330" y="18">9</text><text class="rain mid" x="330" y="36">イ</text><text class="rain mid" x="330" y="54">4</text><text class="rain bright" x="330" y="72">ケ</text><text class="rain lead" x="330" y="90">A</text></g>
-  <g class="a10"><text class="rain dim" x="370" y="0">6</text><text class="rain dim" x="370" y="18">エ</text><text class="rain mid" x="370" y="36">チ</text><text class="rain mid" x="370" y="54">0</text><text class="rain bright" x="370" y="72">ホ</text><text class="rain lead" x="370" y="90">8</text></g>
-  <g class="a11"><text class="rain dim" x="410" y="0">モ</text><text class="rain dim" x="410" y="18">B</text><text class="rain mid" x="410" y="36">3</text><text class="rain mid" x="410" y="54">ル</text><text class="rain bright" x="410" y="72">フ</text><text class="rain lead" x="410" y="90">1</text></g>
-  <g class="a12"><text class="rain dim" x="450" y="0">7</text><text class="rain dim" x="450" y="18">ヒ</text><text class="rain mid" x="450" y="36">シ</text><text class="rain mid" x="450" y="54">E</text><text class="rain bright" x="450" y="72">ツ</text><text class="rain lead" x="450" y="90">ロ</text></g>
-  <g class="a13"><text class="rain dim" x="490" y="0">ス</text><text class="rain dim" x="490" y="18">2</text><text class="rain mid" x="490" y="36">D</text><text class="rain mid" x="490" y="54">ヤ</text><text class="rain bright" x="490" y="72">9</text><text class="rain lead" x="490" y="90">ク</text></g>
-  <g class="a14"><text class="rain dim" x="530" y="0">レ</text><text class="rain dim" x="530" y="18">4</text><text class="rain mid" x="530" y="36">ノ</text><text class="rain mid" x="530" y="54">C</text><text class="rain bright" x="530" y="72">6</text><text class="rain lead" x="530" y="90">ヘ</text></g>
-  <g class="a15"><text class="rain dim" x="570" y="0">A</text><text class="rain dim" x="570" y="18">メ</text><text class="rain mid" x="570" y="36">8</text><text class="rain mid" x="570" y="54">カ</text><text class="rain bright" x="570" y="72">ユ</text><text class="rain lead" x="570" y="90">5</text></g>
-  <g class="a16"><text class="rain dim" x="610" y="0">タ</text><text class="rain dim" x="610" y="18">1</text><text class="rain mid" x="610" y="36">ア</text><text class="rain mid" x="610" y="54">F</text><text class="rain bright" x="610" y="72">ネ</text><text class="rain lead" x="610" y="90">0</text></g>
-  <g class="a17"><text class="rain dim" x="650" y="0">3</text><text class="rain dim" x="650" y="18">ハ</text><text class="rain mid" x="650" y="36">ム</text><text class="rain mid" x="650" y="54">7</text><text class="rain bright" x="650" y="72">ラ</text><text class="rain lead" x="650" y="90">B</text></g>
-  <g class="a18"><text class="rain dim" x="690" y="0">ヨ</text><text class="rain dim" x="690" y="18">D</text><text class="rain mid" x="690" y="36">2</text><text class="rain mid" x="690" y="54">ニ</text><text class="rain bright" x="690" y="72">ウ</text><text class="rain lead" x="690" y="90">9</text></g>
-  <g class="a19"><text class="rain dim" x="730" y="0">サ</text><text class="rain dim" x="730" y="18">6</text><text class="rain mid" x="730" y="36">ト</text><text class="rain mid" x="730" y="54">4</text><text class="rain bright" x="730" y="72">キ</text><text class="rain lead" x="730" y="90">E</text></g>
-  <g class="a20"><text class="rain dim" x="770" y="0">C</text><text class="rain dim" x="770" y="18">オ</text><text class="rain mid" x="770" y="36">セ</text><text class="rain mid" x="770" y="54">8</text><text class="rain bright" x="770" y="72">リ</text><text class="rain lead" x="770" y="90">1</text></g>
+  <!-- 30 rain columns with 10 chars each for dense coverage -->
+  <g class="s1"><text class="r d1" x="8" y="0">ア</text><text class="r d2" x="8" y="18">0</text><text class="r d3" x="8" y="36">カ</text><text class="r d4" x="8" y="54">F</text><text class="r d5" x="8" y="72">ネ</text><text class="r d6" x="8" y="90">7</text><text class="r d7" x="8" y="108">タ</text><text class="r d8" x="8" y="126">3</text><text class="r d9" x="8" y="144">ハ</text><text class="r d10" x="8" y="162">ム</text></g>
+  <g class="s2"><text class="r d1" x="35" y="0">9</text><text class="r d2" x="35" y="18">タ</text><text class="r d3" x="35" y="36">3</text><text class="r d4" x="35" y="54">ハ</text><text class="r d5" x="35" y="72">ム</text><text class="r d6" x="35" y="90">F</text><text class="r d7" x="35" y="108">マ</text><text class="r d8" x="35" y="126">2</text><text class="r d9" x="35" y="144">ラ</text><text class="r d10" x="35" y="162">H</text></g>
+  <g class="s3"><text class="r d1" x="62" y="0">マ</text><text class="r d2" x="62" y="18">2</text><text class="r d3" x="62" y="36">ラ</text><text class="r d4" x="62" y="54">H</text><text class="r d5" x="62" y="72">5</text><text class="r d6" x="62" y="90">E</text><text class="r d7" x="62" y="108">ヨ</text><text class="r d8" x="62" y="126">A</text><text class="r d9" x="62" y="144">6</text><text class="r d10" x="62" y="162">ニ</text></g>
+  <g class="s4"><text class="r d1" x="89" y="0">ヨ</text><text class="r d2" x="89" y="18">A</text><text class="r d3" x="89" y="36">6</text><text class="r d4" x="89" y="54">ニ</text><text class="r d5" x="89" y="72">ウ</text><text class="r d6" x="89" y="90">0</text><text class="r d7" x="89" y="108">8</text><text class="r d8" x="89" y="126">サ</text><text class="r d9" x="89" y="144">ト</text><text class="r d10" x="89" y="162">B</text></g>
+  <g class="s5"><text class="r d1" x="116" y="0">8</text><text class="r d2" x="116" y="18">サ</text><text class="r d3" x="116" y="36">ト</text><text class="r d4" x="116" y="54">B</text><text class="r d5" x="116" y="72">4</text><text class="r d6" x="116" y="90">キ</text><text class="r d7" x="116" y="108">リ</text><text class="r d8" x="116" y="126">C</text><text class="r d9" x="116" y="144">1</text><text class="r d10" x="116" y="162">オ</text></g>
+  <g class="s6"><text class="r d1" x="143" y="0">リ</text><text class="r d2" x="143" y="18">C</text><text class="r d3" x="143" y="36">1</text><text class="r d4" x="143" y="54">オ</text><text class="r d5" x="143" y="72">セ</text><text class="r d6" x="143" y="90">3</text><text class="r d7" x="143" y="108">D</text><text class="r d8" x="143" y="126">ソ</text><text class="r d9" x="143" y="144">7</text><text class="r d10" x="143" y="162">ナ</text></g>
+  <g class="s7"><text class="r d1" x="170" y="0">D</text><text class="r d2" x="170" y="18">ソ</text><text class="r d3" x="170" y="36">7</text><text class="r d4" x="170" y="54">ナ</text><text class="r d5" x="170" y="72">テ</text><text class="r d6" x="170" y="90">E</text><text class="r d7" x="170" y="108">コ</text><text class="r d8" x="170" y="126">5</text><text class="r d9" x="170" y="144">ミ</text><text class="r d10" x="170" y="162">ワ</text></g>
+  <g class="s8"><text class="r d1" x="197" y="0">コ</text><text class="r d2" x="197" y="18">5</text><text class="r d3" x="197" y="36">F</text><text class="r d4" x="197" y="54">ミ</text><text class="r d5" x="197" y="72">2</text><text class="r d6" x="197" y="90">ワ</text><text class="r d7" x="197" y="108">ヌ</text><text class="r d8" x="197" y="126">9</text><text class="r d9" x="197" y="144">イ</text><text class="r d10" x="197" y="162">4</text></g>
+  <g class="s9"><text class="r d1" x="224" y="0">ヌ</text><text class="r d2" x="224" y="18">9</text><text class="r d3" x="224" y="36">イ</text><text class="r d4" x="224" y="54">4</text><text class="r d5" x="224" y="72">ケ</text><text class="r d6" x="224" y="90">A</text><text class="r d7" x="224" y="108">6</text><text class="r d8" x="224" y="126">エ</text><text class="r d9" x="224" y="144">チ</text><text class="r d10" x="224" y="162">0</text></g>
+  <g class="s10"><text class="r d1" x="251" y="0">6</text><text class="r d2" x="251" y="18">エ</text><text class="r d3" x="251" y="36">チ</text><text class="r d4" x="251" y="54">0</text><text class="r d5" x="251" y="72">ホ</text><text class="r d6" x="251" y="90">8</text><text class="r d7" x="251" y="108">モ</text><text class="r d8" x="251" y="126">B</text><text class="r d9" x="251" y="144">3</text><text class="r d10" x="251" y="162">ル</text></g>
+  <g class="s11"><text class="r d1" x="278" y="0">モ</text><text class="r d2" x="278" y="18">B</text><text class="r d3" x="278" y="36">3</text><text class="r d4" x="278" y="54">ル</text><text class="r d5" x="278" y="72">フ</text><text class="r d6" x="278" y="90">1</text><text class="r d7" x="278" y="108">7</text><text class="r d8" x="278" y="126">ヒ</text><text class="r d9" x="278" y="144">シ</text><text class="r d10" x="278" y="162">E</text></g>
+  <g class="s12"><text class="r d1" x="305" y="0">7</text><text class="r d2" x="305" y="18">ヒ</text><text class="r d3" x="305" y="36">シ</text><text class="r d4" x="305" y="54">E</text><text class="r d5" x="305" y="72">ツ</text><text class="r d6" x="305" y="90">ロ</text><text class="r d7" x="305" y="108">ス</text><text class="r d8" x="305" y="126">2</text><text class="r d9" x="305" y="144">D</text><text class="r d10" x="305" y="162">ヤ</text></g>
+  <g class="s13"><text class="r d1" x="332" y="0">ス</text><text class="r d2" x="332" y="18">2</text><text class="r d3" x="332" y="36">D</text><text class="r d4" x="332" y="54">ヤ</text><text class="r d5" x="332" y="72">9</text><text class="r d6" x="332" y="90">ク</text><text class="r d7" x="332" y="108">レ</text><text class="r d8" x="332" y="126">4</text><text class="r d9" x="332" y="144">ノ</text><text class="r d10" x="332" y="162">C</text></g>
+  <g class="s14"><text class="r d1" x="359" y="0">レ</text><text class="r d2" x="359" y="18">4</text><text class="r d3" x="359" y="36">ノ</text><text class="r d4" x="359" y="54">C</text><text class="r d5" x="359" y="72">6</text><text class="r d6" x="359" y="90">ヘ</text><text class="r d7" x="359" y="108">A</text><text class="r d8" x="359" y="126">メ</text><text class="r d9" x="359" y="144">8</text><text class="r d10" x="359" y="162">カ</text></g>
+  <g class="s15"><text class="r d1" x="386" y="0">A</text><text class="r d2" x="386" y="18">メ</text><text class="r d3" x="386" y="36">8</text><text class="r d4" x="386" y="54">カ</text><text class="r d5" x="386" y="72">ユ</text><text class="r d6" x="386" y="90">5</text><text class="r d7" x="386" y="108">タ</text><text class="r d8" x="386" y="126">1</text><text class="r d9" x="386" y="144">ア</text><text class="r d10" x="386" y="162">F</text></g>
+  <g class="s16"><text class="r d1" x="413" y="0">タ</text><text class="r d2" x="413" y="18">1</text><text class="r d3" x="413" y="36">ア</text><text class="r d4" x="413" y="54">F</text><text class="r d5" x="413" y="72">ネ</text><text class="r d6" x="413" y="90">0</text><text class="r d7" x="413" y="108">3</text><text class="r d8" x="413" y="126">ハ</text><text class="r d9" x="413" y="144">ム</text><text class="r d10" x="413" y="162">7</text></g>
+  <g class="s17"><text class="r d1" x="440" y="0">3</text><text class="r d2" x="440" y="18">ハ</text><text class="r d3" x="440" y="36">ム</text><text class="r d4" x="440" y="54">7</text><text class="r d5" x="440" y="72">ラ</text><text class="r d6" x="440" y="90">B</text><text class="r d7" x="440" y="108">ヨ</text><text class="r d8" x="440" y="126">D</text><text class="r d9" x="440" y="144">2</text><text class="r d10" x="440" y="162">ニ</text></g>
+  <g class="s18"><text class="r d1" x="467" y="0">ヨ</text><text class="r d2" x="467" y="18">D</text><text class="r d3" x="467" y="36">2</text><text class="r d4" x="467" y="54">ニ</text><text class="r d5" x="467" y="72">ウ</text><text class="r d6" x="467" y="90">9</text><text class="r d7" x="467" y="108">サ</text><text class="r d8" x="467" y="126">6</text><text class="r d9" x="467" y="144">ト</text><text class="r d10" x="467" y="162">4</text></g>
+  <g class="s19"><text class="r d1" x="494" y="0">サ</text><text class="r d2" x="494" y="18">6</text><text class="r d3" x="494" y="36">ト</text><text class="r d4" x="494" y="54">4</text><text class="r d5" x="494" y="72">キ</text><text class="r d6" x="494" y="90">E</text><text class="r d7" x="494" y="108">コ</text><text class="r d8" x="494" y="126">5</text><text class="r d9" x="494" y="144">ミ</text><text class="r d10" x="494" y="162">ワ</text></g>
+  <g class="s20"><text class="r d1" x="521" y="0">C</text><text class="r d2" x="521" y="18">オ</text><text class="r d3" x="521" y="36">セ</text><text class="r d4" x="521" y="54">8</text><text class="r d5" x="521" y="72">リ</text><text class="r d6" x="521" y="90">1</text><text class="r d7" x="521" y="108">ヌ</text><text class="r d8" x="521" y="126">9</text><text class="r d9" x="521" y="144">イ</text><text class="r d10" x="521" y="162">4</text></g>
+  <g class="s21"><text class="r d1" x="548" y="0">ケ</text><text class="r d2" x="548" y="18">A</text><text class="r d3" x="548" y="36">6</text><text class="r d4" x="548" y="54">エ</text><text class="r d5" x="548" y="72">チ</text><text class="r d6" x="548" y="90">0</text><text class="r d7" x="548" y="108">ホ</text><text class="r d8" x="548" y="126">8</text><text class="r d9" x="548" y="144">モ</text><text class="r d10" x="548" y="162">B</text></g>
+  <g class="s22"><text class="r d1" x="575" y="0">フ</text><text class="r d2" x="575" y="18">1</text><text class="r d3" x="575" y="36">7</text><text class="r d4" x="575" y="54">ヒ</text><text class="r d5" x="575" y="72">シ</text><text class="r d6" x="575" y="90">E</text><text class="r d7" x="575" y="108">ツ</text><text class="r d8" x="575" y="126">ロ</text><text class="r d9" x="575" y="144">ス</text><text class="r d10" x="575" y="162">2</text></g>
+  <g class="s23"><text class="r d1" x="602" y="0">D</text><text class="r d2" x="602" y="18">ヤ</text><text class="r d3" x="602" y="36">9</text><text class="r d4" x="602" y="54">ク</text><text class="r d5" x="602" y="72">レ</text><text class="r d6" x="602" y="90">4</text><text class="r d7" x="602" y="108">ノ</text><text class="r d8" x="602" y="126">C</text><text class="r d9" x="602" y="144">6</text><text class="r d10" x="602" y="162">ヘ</text></g>
+  <g class="s24"><text class="r d1" x="629" y="0">メ</text><text class="r d2" x="629" y="18">8</text><text class="r d3" x="629" y="36">カ</text><text class="r d4" x="629" y="54">ユ</text><text class="r d5" x="629" y="72">5</text><text class="r d6" x="629" y="90">タ</text><text class="r d7" x="629" y="108">1</text><text class="r d8" x="629" y="126">ア</text><text class="r d9" x="629" y="144">F</text><text class="r d10" x="629" y="162">ネ</text></g>
+  <g class="s25"><text class="r d1" x="656" y="0">0</text><text class="r d2" x="656" y="18">3</text><text class="r d3" x="656" y="36">ハ</text><text class="r d4" x="656" y="54">ム</text><text class="r d5" x="656" y="72">7</text><text class="r d6" x="656" y="90">ラ</text><text class="r d7" x="656" y="108">B</text><text class="r d8" x="656" y="126">ヨ</text><text class="r d9" x="656" y="144">D</text><text class="r d10" x="656" y="162">2</text></g>
+  <g class="s26"><text class="r d1" x="683" y="0">ニ</text><text class="r d2" x="683" y="18">ウ</text><text class="r d3" x="683" y="36">9</text><text class="r d4" x="683" y="54">サ</text><text class="r d5" x="683" y="72">6</text><text class="r d6" x="683" y="90">ト</text><text class="r d7" x="683" y="108">4</text><text class="r d8" x="683" y="126">キ</text><text class="r d9" x="683" y="144">E</text><text class="r d10" x="683" y="162">コ</text></g>
+  <g class="s27"><text class="r d1" x="710" y="0">オ</text><text class="r d2" x="710" y="18">セ</text><text class="r d3" x="710" y="36">8</text><text class="r d4" x="710" y="54">リ</text><text class="r d5" x="710" y="72">1</text><text class="r d6" x="710" y="90">ヌ</text><text class="r d7" x="710" y="108">9</text><text class="r d8" x="710" y="126">イ</text><text class="r d9" x="710" y="144">4</text><text class="r d10" x="710" y="162">ケ</text></g>
+  <g class="s28"><text class="r d1" x="737" y="0">A</text><text class="r d2" x="737" y="18">6</text><text class="r d3" x="737" y="36">エ</text><text class="r d4" x="737" y="54">チ</text><text class="r d5" x="737" y="72">0</text><text class="r d6" x="737" y="90">ホ</text><text class="r d7" x="737" y="108">8</text><text class="r d8" x="737" y="126">モ</text><text class="r d9" x="737" y="144">B</text><text class="r d10" x="737" y="162">3</text></g>
+  <g class="s29"><text class="r d1" x="764" y="0">ル</text><text class="r d2" x="764" y="18">フ</text><text class="r d3" x="764" y="36">1</text><text class="r d4" x="764" y="54">7</text><text class="r d5" x="764" y="72">ヒ</text><text class="r d6" x="764" y="90">シ</text><text class="r d7" x="764" y="108">E</text><text class="r d8" x="764" y="126">ツ</text><text class="r d9" x="764" y="144">ロ</text><text class="r d10" x="764" y="162">ス</text></g>
+  <g class="s30"><text class="r d1" x="791" y="0">2</text><text class="r d2" x="791" y="18">D</text><text class="r d3" x="791" y="36">ヤ</text><text class="r d4" x="791" y="54">9</text><text class="r d5" x="791" y="72">ク</text><text class="r d6" x="791" y="90">レ</text><text class="r d7" x="791" y="108">4</text><text class="r d8" x="791" y="126">ノ</text><text class="r d9" x="791" y="144">C</text><text class="r d10" x="791" y="162">6</text></g>
 
-  <!-- Center overlay: dark box behind text for readability -->
-  <rect x="100" y="95" width="600" height="90" rx="6" fill="#0D1117" opacity="0.85"/>
+  <!-- Center text panel -->
+  <rect x="120" y="105" width="560" height="90" rx="4" fill="#0D1117" opacity="0.9"/>
+  <rect x="120" y="105" width="560" height="90" rx="4" fill="none" stroke="#00FF00" stroke-width="0.5" opacity="0.3"/>
 
-  <!-- Typing lines (cycle through 4 phrases) -->
-  <g>
-    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
-      &gt; encrypted inference on neural networks
-    </text>
-    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
-      &gt; hardening FHE frameworks
-    </text>
-    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;0;0" dur="12s" repeatCount="indefinite"/>
-      &gt; AI-driven drug discovery
-    </text>
-    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1" dur="12s" repeatCount="indefinite"/>
-      &gt; wake up, Neo...
-    </text>
-  </g>
+  <!-- Cycling text -->
+  <text class="t l1" x="400" y="142" text-anchor="middle">&gt; encrypted inference on neural networks</text>
+  <text class="t l2" x="400" y="142" text-anchor="middle">&gt; hardening FHE frameworks</text>
+  <text class="t l3" x="400" y="142" text-anchor="middle">&gt; AI-driven drug discovery</text>
+  <text class="t l4" x="400" y="142" text-anchor="middle">&gt; wake up, Neo...</text>
 
-  <!-- Tagline -->
-  <text class="tagline" x="400" y="160" text-anchor="middle">AI Engineer  |  tinkering with all things AI</text>
+  <!-- Subtitle -->
+  <text class="sub" x="400" y="172" text-anchor="middle">AI Engineer  //  tinkering with all things AI</text>
 
   <!-- Blinking cursor -->
-  <rect class="cursor" x="620" y="118" width="10" height="18" rx="1"/>
+  <rect class="cur" x="636" y="129" width="2" height="17"/>
 </svg>
