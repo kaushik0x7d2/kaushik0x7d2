@@ -16,23 +16,14 @@
 
 ### Featured Work
 
-<a href="https://github.com/kaushik0x7d2/orion">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=kaushik0x7d2&repo=orion&theme=github_dark&hide_border=true&bg_color=0d1117" />
-</a>
-<a href="https://github.com/kaushik0x7d2/protac-pipeline">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=kaushik0x7d2&repo=protac-pipeline&theme=github_dark&hide_border=true&bg_color=0d1117" />
-</a>
+> **[Orion](https://github.com/kaushik0x7d2/orion)** `FHE` `PyTorch` `Go` `Security`
+> Hardened FHE framework for private neural inference — security audit of ASPLOS'25 Best Paper, 8 vulnerability fixes, 88 adversarial tests, transformer support
 
-<br/><br/>
-
-| Project | What it does |
-|---------|-------------|
-| **[Orion](https://github.com/kaushik0x7d2/orion)** | Hardened FHE framework for private neural inference — security audit of ASPLOS'25 Best Paper, 8 vuln fixes, adversarial test suite, transformer support |
-| **[PROTAC Pipeline](https://github.com/kaushik0x7d2/protac-pipeline)** | Automated PROTAC drug design — SE3 equivariant diffusion models with data leakage analysis |
+> **[PROTAC Pipeline](https://github.com/kaushik0x7d2/protac-pipeline)** `Drug Discovery` `SE3` `Diffusion`
+> Automated PROTAC drug design pipeline — SE3 equivariant diffusion models with data leakage analysis
 
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kaushik0x7d2&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&count_private=true" height="165"/>
   <img src="https://github-readme-streak-stats.herokuapp.com?user=kaushik0x7d2&theme=github-dark-blue&hide_border=true&background=0D1117" height="165"/>
 </p>
