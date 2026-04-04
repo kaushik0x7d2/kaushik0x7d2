@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <style>
+      text { font-family: 'Courier New', monospace; fill: #00FF00; font-size: 14px; }
+      .dim { opacity: 0.3; }
+      .mid { opacity: 0.6; }
+      .bright { opacity: 1; }
+      @keyframes rain1 { 0% { transform: translateY(-200px); } 100% { transform: translateY(220px); } }
+      @keyframes rain2 { 0% { transform: translateY(-180px); } 100% { transform: translateY(240px); } }
+      @keyframes rain3 { 0% { transform: translateY(-220px); } 100% { transform: translateY(200px); } }
+      @keyframes rain4 { 0% { transform: translateY(-160px); } 100% { transform: translateY(260px); } }
+      @keyframes rain5 { 0% { transform: translateY(-240px); } 100% { transform: translateY(180px); } }
+      @keyframes glow { 0%,100% { opacity: 0.8; } 50% { opacity: 1; } }
+      .r1 { animation: rain1 3.0s linear infinite; }
+      .r2 { animation: rain2 3.5s linear infinite; }
+      .r3 { animation: rain3 2.8s linear infinite; }
+      .r4 { animation: rain4 4.0s linear infinite; }
+      .r5 { animation: rain5 3.2s linear infinite; }
+      .r6 { animation: rain1 2.5s linear infinite; }
+      .r7 { animation: rain2 4.2s linear infinite; }
+      .r8 { animation: rain3 3.7s linear infinite; }
+      .r9 { animation: rain4 2.9s linear infinite; }
+      .r10 { animation: rain5 3.4s linear infinite; }
+      .r11 { animation: rain1 4.5s linear infinite; }
+      .r12 { animation: rain2 2.6s linear infinite; }
+      .r13 { animation: rain3 3.9s linear infinite; }
+      .r14 { animation: rain4 3.1s linear infinite; }
+      .r15 { animation: rain5 4.3s linear infinite; }
+      .r16 { animation: rain1 2.7s linear infinite; }
+      .r17 { animation: rain2 3.6s linear infinite; }
+      .r18 { animation: rain3 4.1s linear infinite; }
+      .r19 { animation: rain4 2.4s linear infinite; }
+      .r20 { animation: rain5 3.3s linear infinite; }
+    </style>
+  </defs>
+  <rect width="800" height="200" fill="#0D1117"/>
+
+  <!-- Column 1 -->
+  <g class="r1"><text x="15" y="0" class="dim">ア</text><text x="15" y="18" class="dim">0</text><text x="15" y="36" class="mid">カ</text><text x="15" y="54" class="mid">1</text><text x="15" y="72" class="bright">ネ</text><text x="15" y="90" class="bright" style="fill:#AAFFAA">7</text></g>
+
+  <!-- Column 2 -->
+  <g class="r2"><text x="55" y="0" class="dim">9</text><text x="55" y="18" class="dim">タ</text><text x="55" y="36" class="mid">3</text><text x="55" y="54" class="mid">ハ</text><text x="55" y="72" class="bright">ム</text><text x="55" y="90" class="bright" style="fill:#AAFFAA">F</text></g>
+
+  <!-- Column 3 -->
+  <g class="r3"><text x="95" y="0" class="dim">マ</text><text x="95" y="18" class="dim">2</text><text x="95" y="36" class="mid">ラ</text><text x="95" y="54" class="mid">H</text><text x="95" y="72" class="bright">5</text><text x="95" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
+
+  <!-- Column 4 -->
+  <g class="r4"><text x="135" y="0" class="dim">ヨ</text><text x="135" y="18" class="dim">A</text><text x="135" y="36" class="mid">6</text><text x="135" y="54" class="mid">ニ</text><text x="135" y="72" class="bright">ウ</text><text x="135" y="90" class="bright" style="fill:#AAFFAA">0</text></g>
+
+  <!-- Column 5 -->
+  <g class="r5"><text x="175" y="0" class="dim">8</text><text x="175" y="18" class="dim">サ</text><text x="175" y="36" class="mid">ト</text><text x="175" y="54" class="mid">B</text><text x="175" y="72" class="bright">4</text><text x="175" y="90" class="bright" style="fill:#AAFFAA">キ</text></g>
+
+  <!-- Column 6 -->
+  <g class="r6"><text x="215" y="0" class="dim">リ</text><text x="215" y="18" class="dim">C</text><text x="215" y="36" class="mid">1</text><text x="215" y="54" class="mid">オ</text><text x="215" y="72" class="bright">セ</text><text x="215" y="90" class="bright" style="fill:#AAFFAA">3</text></g>
+
+  <!-- Column 7 -->
+  <g class="r7"><text x="255" y="0" class="dim">D</text><text x="255" y="18" class="dim">ソ</text><text x="255" y="36" class="mid">7</text><text x="255" y="54" class="mid">ナ</text><text x="255" y="72" class="bright">テ</text><text x="255" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
+
+  <!-- Column 8 -->
+  <g class="r8"><text x="295" y="0" class="dim">コ</text><text x="295" y="18" class="dim">5</text><text x="295" y="36" class="mid">F</text><text x="295" y="54" class="mid">ミ</text><text x="295" y="72" class="bright">2</text><text x="295" y="90" class="bright" style="fill:#AAFFAA">ワ</text></g>
+
+  <!-- Column 9 -->
+  <g class="r9"><text x="335" y="0" class="dim">ヌ</text><text x="335" y="18" class="dim">9</text><text x="335" y="36" class="mid">イ</text><text x="335" y="54" class="mid">4</text><text x="335" y="72" class="bright">ケ</text><text x="335" y="90" class="bright" style="fill:#AAFFAA">A</text></g>
+
+  <!-- Column 10 -->
+  <g class="r10"><text x="375" y="0" class="dim">6</text><text x="375" y="18" class="dim">エ</text><text x="375" y="36" class="mid">チ</text><text x="375" y="54" class="mid">0</text><text x="375" y="72" class="bright">ホ</text><text x="375" y="90" class="bright" style="fill:#AAFFAA">8</text></g>
+
+  <!-- Column 11 -->
+  <g class="r11"><text x="415" y="0" class="dim">モ</text><text x="415" y="18" class="dim">B</text><text x="415" y="36" class="mid">3</text><text x="415" y="54" class="mid">ル</text><text x="415" y="72" class="bright">フ</text><text x="415" y="90" class="bright" style="fill:#AAFFAA">1</text></g>
+
+  <!-- Column 12 -->
+  <g class="r12"><text x="455" y="0" class="dim">7</text><text x="455" y="18" class="dim">ヒ</text><text x="455" y="36" class="mid">シ</text><text x="455" y="54" class="mid">E</text><text x="455" y="72" class="bright">ツ</text><text x="455" y="90" class="bright" style="fill:#AAFFAA">ロ</text></g>
+
+  <!-- Column 13 -->
+  <g class="r13"><text x="495" y="0" class="dim">ス</text><text x="495" y="18" class="dim">2</text><text x="495" y="36" class="mid">D</text><text x="495" y="54" class="mid">ヤ</text><text x="495" y="72" class="bright">9</text><text x="495" y="90" class="bright" style="fill:#AAFFAA">ク</text></g>
+
+  <!-- Column 14 -->
+  <g class="r14"><text x="535" y="0" class="dim">レ</text><text x="535" y="18" class="dim">4</text><text x="535" y="36" class="mid">ノ</text><text x="535" y="54" class="mid">C</text><text x="535" y="72" class="bright">6</text><text x="535" y="90" class="bright" style="fill:#AAFFAA">ヘ</text></g>
+
+  <!-- Column 15 -->
+  <g class="r15"><text x="575" y="0" class="dim">A</text><text x="575" y="18" class="dim">メ</text><text x="575" y="36" class="mid">8</text><text x="575" y="54" class="mid">カ</text><text x="575" y="72" class="bright">ユ</text><text x="575" y="90" class="bright" style="fill:#AAFFAA">5</text></g>
+
+  <!-- Column 16 -->
+  <g class="r16"><text x="615" y="0" class="dim">タ</text><text x="615" y="18" class="dim">1</text><text x="615" y="36" class="mid">ア</text><text x="615" y="54" class="mid">F</text><text x="615" y="72" class="bright">ネ</text><text x="615" y="90" class="bright" style="fill:#AAFFAA">0</text></g>
+
+  <!-- Column 17 -->
+  <g class="r17"><text x="655" y="0" class="dim">3</text><text x="655" y="18" class="dim">ハ</text><text x="655" y="36" class="mid">ム</text><text x="655" y="54" class="mid">7</text><text x="655" y="72" class="bright">ラ</text><text x="655" y="90" class="bright" style="fill:#AAFFAA">B</text></g>
+
+  <!-- Column 18 -->
+  <g class="r18"><text x="695" y="0" class="dim">ヨ</text><text x="695" y="18" class="dim">D</text><text x="695" y="36" class="mid">2</text><text x="695" y="54" class="mid">ニ</text><text x="695" y="72" class="bright">ウ</text><text x="695" y="90" class="bright" style="fill:#AAFFAA">9</text></g>
+
+  <!-- Column 19 -->
+  <g class="r19"><text x="735" y="0" class="dim">サ</text><text x="735" y="18" class="dim">6</text><text x="735" y="36" class="mid">ト</text><text x="735" y="54" class="mid">4</text><text x="735" y="72" class="bright">キ</text><text x="735" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
+
+  <!-- Column 20 -->
+  <g class="r20"><text x="775" y="0" class="dim">C</text><text x="775" y="18" class="dim">オ</text><text x="775" y="36" class="mid">セ</text><text x="775" y="54" class="mid">8</text><text x="775" y="72" class="bright">リ</text><text x="775" y="90" class="bright" style="fill:#AAFFAA">1</text></g>
+</svg>
