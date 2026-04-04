@@ -4,10 +4,6 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2500&pause=800&color=00FF00&center=true&vCenter=true&multiline=true&width=600&height=80&lines=%3E+encrypted+inference+on+neural+networks;%3E+hardening+FHE+frameworks;%3E+AI-driven+drug+discovery;%3E+wake+up%2C+Neo..." alt="Typing SVG" />
-
-<br/>
-
 <img src="https://img.shields.io/badge/Python-00FF00?style=for-the-badge&logo=python&logoColor=black"/>
 <img src="https://img.shields.io/badge/PyTorch-00FF00?style=for-the-badge&logo=pytorch&logoColor=black"/>
 <img src="https://img.shields.io/badge/Go-00FF00?style=for-the-badge&logo=go&logoColor=black"/>

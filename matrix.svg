@@ -1,97 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280">
   <defs>
     <style>
-      text { font-family: 'Courier New', monospace; fill: #00FF00; font-size: 14px; }
-      .dim { opacity: 0.3; }
-      .mid { opacity: 0.6; }
-      .bright { opacity: 1; }
-      @keyframes rain1 { 0% { transform: translateY(-200px); } 100% { transform: translateY(220px); } }
-      @keyframes rain2 { 0% { transform: translateY(-180px); } 100% { transform: translateY(240px); } }
-      @keyframes rain3 { 0% { transform: translateY(-220px); } 100% { transform: translateY(200px); } }
-      @keyframes rain4 { 0% { transform: translateY(-160px); } 100% { transform: translateY(260px); } }
-      @keyframes rain5 { 0% { transform: translateY(-240px); } 100% { transform: translateY(180px); } }
-      @keyframes glow { 0%,100% { opacity: 0.8; } 50% { opacity: 1; } }
-      .r1 { animation: rain1 3.0s linear infinite; }
-      .r2 { animation: rain2 3.5s linear infinite; }
-      .r3 { animation: rain3 2.8s linear infinite; }
-      .r4 { animation: rain4 4.0s linear infinite; }
-      .r5 { animation: rain5 3.2s linear infinite; }
-      .r6 { animation: rain1 2.5s linear infinite; }
-      .r7 { animation: rain2 4.2s linear infinite; }
-      .r8 { animation: rain3 3.7s linear infinite; }
-      .r9 { animation: rain4 2.9s linear infinite; }
-      .r10 { animation: rain5 3.4s linear infinite; }
-      .r11 { animation: rain1 4.5s linear infinite; }
-      .r12 { animation: rain2 2.6s linear infinite; }
-      .r13 { animation: rain3 3.9s linear infinite; }
-      .r14 { animation: rain4 3.1s linear infinite; }
-      .r15 { animation: rain5 4.3s linear infinite; }
-      .r16 { animation: rain1 2.7s linear infinite; }
-      .r17 { animation: rain2 3.6s linear infinite; }
-      .r18 { animation: rain3 4.1s linear infinite; }
-      .r19 { animation: rain4 2.4s linear infinite; }
-      .r20 { animation: rain5 3.3s linear infinite; }
+      .rain { font-family: 'Courier New', monospace; fill: #00FF00; font-size: 14px; }
+      .dim { opacity: 0.15; }
+      .mid { opacity: 0.3; }
+      .bright { opacity: 0.5; }
+      .lead { opacity: 0.7; fill: #AAFFAA; }
+      @keyframes r1 { 0% { transform: translateY(-200px); } 100% { transform: translateY(300px); } }
+      @keyframes r2 { 0% { transform: translateY(-180px); } 100% { transform: translateY(320px); } }
+      @keyframes r3 { 0% { transform: translateY(-220px); } 100% { transform: translateY(280px); } }
+      @keyframes r4 { 0% { transform: translateY(-160px); } 100% { transform: translateY(340px); } }
+      @keyframes r5 { 0% { transform: translateY(-240px); } 100% { transform: translateY(260px); } }
+      .a1 { animation: r1 3.0s linear infinite; }
+      .a2 { animation: r2 3.5s linear infinite; }
+      .a3 { animation: r3 2.8s linear infinite; }
+      .a4 { animation: r4 4.0s linear infinite; }
+      .a5 { animation: r5 3.2s linear infinite; }
+      .a6 { animation: r1 2.5s linear infinite; }
+      .a7 { animation: r2 4.2s linear infinite; }
+      .a8 { animation: r3 3.7s linear infinite; }
+      .a9 { animation: r4 2.9s linear infinite; }
+      .a10 { animation: r5 3.4s linear infinite; }
+      .a11 { animation: r1 4.5s linear infinite; }
+      .a12 { animation: r2 2.6s linear infinite; }
+      .a13 { animation: r3 3.9s linear infinite; }
+      .a14 { animation: r4 3.1s linear infinite; }
+      .a15 { animation: r5 4.3s linear infinite; }
+      .a16 { animation: r1 2.7s linear infinite; }
+      .a17 { animation: r2 3.6s linear infinite; }
+      .a18 { animation: r3 4.1s linear infinite; }
+      .a19 { animation: r4 2.4s linear infinite; }
+      .a20 { animation: r5 3.3s linear infinite; }
+
+      /* Typing animation */
+      @keyframes typing {
+        0%, 18% { content: "> encrypted inference on neural networks"; }
+        25%, 43% { content: "> hardening FHE frameworks"; }
+        50%, 68% { content: "> AI-driven drug discovery"; }
+        75%, 93% { content: "> wake up, Neo..."; }
+      }
+      @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes line1 {
+        0%, 24% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+      @keyframes line2 {
+        0%, 24% { opacity: 0; }
+        25%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes line3 {
+        0%, 49% { opacity: 0; }
+        50%, 74% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+      @keyframes line4 {
+        0%, 74% { opacity: 0; }
+        75%, 100% { opacity: 1; }
+      }
+      @keyframes typeIn1 {
+        0% { width: 0; } 20% { width: 395px; } 24% { width: 395px; } 25% { width: 0; } 100% { width: 0; }
+      }
+      @keyframes typeIn2 {
+        0%, 24% { width: 0; } 25% { width: 0; } 45% { width: 275px; } 49% { width: 275px; } 50% { width: 0; } 100% { width: 0; }
+      }
+      @keyframes typeIn3 {
+        0%, 49% { width: 0; } 50% { width: 0; } 70% { width: 265px; } 74% { width: 265px; } 75% { width: 0; } 100% { width: 0; }
+      }
+      @keyframes typeIn4 {
+        0%, 74% { width: 0; } 75% { width: 0; } 95% { width: 185px; } 100% { width: 185px; }
+      }
+      .cursor { animation: blink 0.8s step-end infinite; fill: #00FF00; }
+      .center-text { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; fill: #00FF00; font-size: 20px; font-weight: 600; }
+      .tagline { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; fill: #00FF00; font-size: 13px; opacity: 0.8; }
     </style>
   </defs>
-  <rect width="800" height="200" fill="#0D1117"/>
+  <rect width="800" height="280" fill="#0D1117"/>
 
-  <!-- Column 1 -->
-  <g class="r1"><text x="15" y="0" class="dim">ア</text><text x="15" y="18" class="dim">0</text><text x="15" y="36" class="mid">カ</text><text x="15" y="54" class="mid">1</text><text x="15" y="72" class="bright">ネ</text><text x="15" y="90" class="bright" style="fill:#AAFFAA">7</text></g>
+  <!-- Rain columns (behind text) -->
+  <g class="a1"><text class="rain dim" x="10" y="0">ア</text><text class="rain dim" x="10" y="18">0</text><text class="rain mid" x="10" y="36">カ</text><text class="rain mid" x="10" y="54">1</text><text class="rain bright" x="10" y="72">ネ</text><text class="rain lead" x="10" y="90">7</text></g>
+  <g class="a2"><text class="rain dim" x="50" y="0">9</text><text class="rain dim" x="50" y="18">タ</text><text class="rain mid" x="50" y="36">3</text><text class="rain mid" x="50" y="54">ハ</text><text class="rain bright" x="50" y="72">ム</text><text class="rain lead" x="50" y="90">F</text></g>
+  <g class="a3"><text class="rain dim" x="90" y="0">マ</text><text class="rain dim" x="90" y="18">2</text><text class="rain mid" x="90" y="36">ラ</text><text class="rain mid" x="90" y="54">H</text><text class="rain bright" x="90" y="72">5</text><text class="rain lead" x="90" y="90">E</text></g>
+  <g class="a4"><text class="rain dim" x="130" y="0">ヨ</text><text class="rain dim" x="130" y="18">A</text><text class="rain mid" x="130" y="36">6</text><text class="rain mid" x="130" y="54">ニ</text><text class="rain bright" x="130" y="72">ウ</text><text class="rain lead" x="130" y="90">0</text></g>
+  <g class="a5"><text class="rain dim" x="170" y="0">8</text><text class="rain dim" x="170" y="18">サ</text><text class="rain mid" x="170" y="36">ト</text><text class="rain mid" x="170" y="54">B</text><text class="rain bright" x="170" y="72">4</text><text class="rain lead" x="170" y="90">キ</text></g>
+  <g class="a6"><text class="rain dim" x="210" y="0">リ</text><text class="rain dim" x="210" y="18">C</text><text class="rain mid" x="210" y="36">1</text><text class="rain mid" x="210" y="54">オ</text><text class="rain bright" x="210" y="72">セ</text><text class="rain lead" x="210" y="90">3</text></g>
+  <g class="a7"><text class="rain dim" x="250" y="0">D</text><text class="rain dim" x="250" y="18">ソ</text><text class="rain mid" x="250" y="36">7</text><text class="rain mid" x="250" y="54">ナ</text><text class="rain bright" x="250" y="72">テ</text><text class="rain lead" x="250" y="90">E</text></g>
+  <g class="a8"><text class="rain dim" x="290" y="0">コ</text><text class="rain dim" x="290" y="18">5</text><text class="rain mid" x="290" y="36">F</text><text class="rain mid" x="290" y="54">ミ</text><text class="rain bright" x="290" y="72">2</text><text class="rain lead" x="290" y="90">ワ</text></g>
+  <g class="a9"><text class="rain dim" x="330" y="0">ヌ</text><text class="rain dim" x="330" y="18">9</text><text class="rain mid" x="330" y="36">イ</text><text class="rain mid" x="330" y="54">4</text><text class="rain bright" x="330" y="72">ケ</text><text class="rain lead" x="330" y="90">A</text></g>
+  <g class="a10"><text class="rain dim" x="370" y="0">6</text><text class="rain dim" x="370" y="18">エ</text><text class="rain mid" x="370" y="36">チ</text><text class="rain mid" x="370" y="54">0</text><text class="rain bright" x="370" y="72">ホ</text><text class="rain lead" x="370" y="90">8</text></g>
+  <g class="a11"><text class="rain dim" x="410" y="0">モ</text><text class="rain dim" x="410" y="18">B</text><text class="rain mid" x="410" y="36">3</text><text class="rain mid" x="410" y="54">ル</text><text class="rain bright" x="410" y="72">フ</text><text class="rain lead" x="410" y="90">1</text></g>
+  <g class="a12"><text class="rain dim" x="450" y="0">7</text><text class="rain dim" x="450" y="18">ヒ</text><text class="rain mid" x="450" y="36">シ</text><text class="rain mid" x="450" y="54">E</text><text class="rain bright" x="450" y="72">ツ</text><text class="rain lead" x="450" y="90">ロ</text></g>
+  <g class="a13"><text class="rain dim" x="490" y="0">ス</text><text class="rain dim" x="490" y="18">2</text><text class="rain mid" x="490" y="36">D</text><text class="rain mid" x="490" y="54">ヤ</text><text class="rain bright" x="490" y="72">9</text><text class="rain lead" x="490" y="90">ク</text></g>
+  <g class="a14"><text class="rain dim" x="530" y="0">レ</text><text class="rain dim" x="530" y="18">4</text><text class="rain mid" x="530" y="36">ノ</text><text class="rain mid" x="530" y="54">C</text><text class="rain bright" x="530" y="72">6</text><text class="rain lead" x="530" y="90">ヘ</text></g>
+  <g class="a15"><text class="rain dim" x="570" y="0">A</text><text class="rain dim" x="570" y="18">メ</text><text class="rain mid" x="570" y="36">8</text><text class="rain mid" x="570" y="54">カ</text><text class="rain bright" x="570" y="72">ユ</text><text class="rain lead" x="570" y="90">5</text></g>
+  <g class="a16"><text class="rain dim" x="610" y="0">タ</text><text class="rain dim" x="610" y="18">1</text><text class="rain mid" x="610" y="36">ア</text><text class="rain mid" x="610" y="54">F</text><text class="rain bright" x="610" y="72">ネ</text><text class="rain lead" x="610" y="90">0</text></g>
+  <g class="a17"><text class="rain dim" x="650" y="0">3</text><text class="rain dim" x="650" y="18">ハ</text><text class="rain mid" x="650" y="36">ム</text><text class="rain mid" x="650" y="54">7</text><text class="rain bright" x="650" y="72">ラ</text><text class="rain lead" x="650" y="90">B</text></g>
+  <g class="a18"><text class="rain dim" x="690" y="0">ヨ</text><text class="rain dim" x="690" y="18">D</text><text class="rain mid" x="690" y="36">2</text><text class="rain mid" x="690" y="54">ニ</text><text class="rain bright" x="690" y="72">ウ</text><text class="rain lead" x="690" y="90">9</text></g>
+  <g class="a19"><text class="rain dim" x="730" y="0">サ</text><text class="rain dim" x="730" y="18">6</text><text class="rain mid" x="730" y="36">ト</text><text class="rain mid" x="730" y="54">4</text><text class="rain bright" x="730" y="72">キ</text><text class="rain lead" x="730" y="90">E</text></g>
+  <g class="a20"><text class="rain dim" x="770" y="0">C</text><text class="rain dim" x="770" y="18">オ</text><text class="rain mid" x="770" y="36">セ</text><text class="rain mid" x="770" y="54">8</text><text class="rain bright" x="770" y="72">リ</text><text class="rain lead" x="770" y="90">1</text></g>
 
-  <!-- Column 2 -->
-  <g class="r2"><text x="55" y="0" class="dim">9</text><text x="55" y="18" class="dim">タ</text><text x="55" y="36" class="mid">3</text><text x="55" y="54" class="mid">ハ</text><text x="55" y="72" class="bright">ム</text><text x="55" y="90" class="bright" style="fill:#AAFFAA">F</text></g>
+  <!-- Center overlay: dark box behind text for readability -->
+  <rect x="100" y="95" width="600" height="90" rx="6" fill="#0D1117" opacity="0.85"/>
 
-  <!-- Column 3 -->
-  <g class="r3"><text x="95" y="0" class="dim">マ</text><text x="95" y="18" class="dim">2</text><text x="95" y="36" class="mid">ラ</text><text x="95" y="54" class="mid">H</text><text x="95" y="72" class="bright">5</text><text x="95" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
+  <!-- Typing lines (cycle through 4 phrases) -->
+  <g>
+    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
+      &gt; encrypted inference on neural networks
+    </text>
+    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0;0" dur="12s" repeatCount="indefinite"/>
+      &gt; hardening FHE frameworks
+    </text>
+    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1;0;0" dur="12s" repeatCount="indefinite"/>
+      &gt; AI-driven drug discovery
+    </text>
+    <text class="center-text" x="400" y="130" text-anchor="middle" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;1;1" dur="12s" repeatCount="indefinite"/>
+      &gt; wake up, Neo...
+    </text>
+  </g>
 
-  <!-- Column 4 -->
-  <g class="r4"><text x="135" y="0" class="dim">ヨ</text><text x="135" y="18" class="dim">A</text><text x="135" y="36" class="mid">6</text><text x="135" y="54" class="mid">ニ</text><text x="135" y="72" class="bright">ウ</text><text x="135" y="90" class="bright" style="fill:#AAFFAA">0</text></g>
+  <!-- Tagline -->
+  <text class="tagline" x="400" y="160" text-anchor="middle">AI Engineer  |  tinkering with all things AI</text>
 
-  <!-- Column 5 -->
-  <g class="r5"><text x="175" y="0" class="dim">8</text><text x="175" y="18" class="dim">サ</text><text x="175" y="36" class="mid">ト</text><text x="175" y="54" class="mid">B</text><text x="175" y="72" class="bright">4</text><text x="175" y="90" class="bright" style="fill:#AAFFAA">キ</text></g>
-
-  <!-- Column 6 -->
-  <g class="r6"><text x="215" y="0" class="dim">リ</text><text x="215" y="18" class="dim">C</text><text x="215" y="36" class="mid">1</text><text x="215" y="54" class="mid">オ</text><text x="215" y="72" class="bright">セ</text><text x="215" y="90" class="bright" style="fill:#AAFFAA">3</text></g>
-
-  <!-- Column 7 -->
-  <g class="r7"><text x="255" y="0" class="dim">D</text><text x="255" y="18" class="dim">ソ</text><text x="255" y="36" class="mid">7</text><text x="255" y="54" class="mid">ナ</text><text x="255" y="72" class="bright">テ</text><text x="255" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
-
-  <!-- Column 8 -->
-  <g class="r8"><text x="295" y="0" class="dim">コ</text><text x="295" y="18" class="dim">5</text><text x="295" y="36" class="mid">F</text><text x="295" y="54" class="mid">ミ</text><text x="295" y="72" class="bright">2</text><text x="295" y="90" class="bright" style="fill:#AAFFAA">ワ</text></g>
-
-  <!-- Column 9 -->
-  <g class="r9"><text x="335" y="0" class="dim">ヌ</text><text x="335" y="18" class="dim">9</text><text x="335" y="36" class="mid">イ</text><text x="335" y="54" class="mid">4</text><text x="335" y="72" class="bright">ケ</text><text x="335" y="90" class="bright" style="fill:#AAFFAA">A</text></g>
-
-  <!-- Column 10 -->
-  <g class="r10"><text x="375" y="0" class="dim">6</text><text x="375" y="18" class="dim">エ</text><text x="375" y="36" class="mid">チ</text><text x="375" y="54" class="mid">0</text><text x="375" y="72" class="bright">ホ</text><text x="375" y="90" class="bright" style="fill:#AAFFAA">8</text></g>
-
-  <!-- Column 11 -->
-  <g class="r11"><text x="415" y="0" class="dim">モ</text><text x="415" y="18" class="dim">B</text><text x="415" y="36" class="mid">3</text><text x="415" y="54" class="mid">ル</text><text x="415" y="72" class="bright">フ</text><text x="415" y="90" class="bright" style="fill:#AAFFAA">1</text></g>
-
-  <!-- Column 12 -->
-  <g class="r12"><text x="455" y="0" class="dim">7</text><text x="455" y="18" class="dim">ヒ</text><text x="455" y="36" class="mid">シ</text><text x="455" y="54" class="mid">E</text><text x="455" y="72" class="bright">ツ</text><text x="455" y="90" class="bright" style="fill:#AAFFAA">ロ</text></g>
-
-  <!-- Column 13 -->
-  <g class="r13"><text x="495" y="0" class="dim">ス</text><text x="495" y="18" class="dim">2</text><text x="495" y="36" class="mid">D</text><text x="495" y="54" class="mid">ヤ</text><text x="495" y="72" class="bright">9</text><text x="495" y="90" class="bright" style="fill:#AAFFAA">ク</text></g>
-
-  <!-- Column 14 -->
-  <g class="r14"><text x="535" y="0" class="dim">レ</text><text x="535" y="18" class="dim">4</text><text x="535" y="36" class="mid">ノ</text><text x="535" y="54" class="mid">C</text><text x="535" y="72" class="bright">6</text><text x="535" y="90" class="bright" style="fill:#AAFFAA">ヘ</text></g>
-
-  <!-- Column 15 -->
-  <g class="r15"><text x="575" y="0" class="dim">A</text><text x="575" y="18" class="dim">メ</text><text x="575" y="36" class="mid">8</text><text x="575" y="54" class="mid">カ</text><text x="575" y="72" class="bright">ユ</text><text x="575" y="90" class="bright" style="fill:#AAFFAA">5</text></g>
-
-  <!-- Column 16 -->
-  <g class="r16"><text x="615" y="0" class="dim">タ</text><text x="615" y="18" class="dim">1</text><text x="615" y="36" class="mid">ア</text><text x="615" y="54" class="mid">F</text><text x="615" y="72" class="bright">ネ</text><text x="615" y="90" class="bright" style="fill:#AAFFAA">0</text></g>
-
-  <!-- Column 17 -->
-  <g class="r17"><text x="655" y="0" class="dim">3</text><text x="655" y="18" class="dim">ハ</text><text x="655" y="36" class="mid">ム</text><text x="655" y="54" class="mid">7</text><text x="655" y="72" class="bright">ラ</text><text x="655" y="90" class="bright" style="fill:#AAFFAA">B</text></g>
-
-  <!-- Column 18 -->
-  <g class="r18"><text x="695" y="0" class="dim">ヨ</text><text x="695" y="18" class="dim">D</text><text x="695" y="36" class="mid">2</text><text x="695" y="54" class="mid">ニ</text><text x="695" y="72" class="bright">ウ</text><text x="695" y="90" class="bright" style="fill:#AAFFAA">9</text></g>
-
-  <!-- Column 19 -->
-  <g class="r19"><text x="735" y="0" class="dim">サ</text><text x="735" y="18" class="dim">6</text><text x="735" y="36" class="mid">ト</text><text x="735" y="54" class="mid">4</text><text x="735" y="72" class="bright">キ</text><text x="735" y="90" class="bright" style="fill:#AAFFAA">E</text></g>
-
-  <!-- Column 20 -->
-  <g class="r20"><text x="775" y="0" class="dim">C</text><text x="775" y="18" class="dim">オ</text><text x="775" y="36" class="mid">セ</text><text x="775" y="54" class="mid">8</text><text x="775" y="72" class="bright">リ</text><text x="775" y="90" class="bright" style="fill:#AAFFAA">1</text></g>
+  <!-- Blinking cursor -->
+  <rect class="cursor" x="620" y="118" width="10" height="18" rx="1"/>
 </svg>
