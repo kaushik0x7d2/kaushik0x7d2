@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF00,100:003300&height=200&section=header&text=Kaushik&fontColor=00FF00&fontSize=60&fontAlignY=35&desc=AI%20Engineer%20%7C%20Tinkering%20with%20all%20things%20AI&descAlignY=55&descSize=18&animation=fadeIn&fontFamily=JetBrains%20Mono" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF00,100:003300&height=120&section=header" width="100%"/>
 
 <br/>
 
