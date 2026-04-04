@@ -14,16 +14,6 @@
 
 ---
 
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                       FEATURED  WORK                            ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
 > **[`> Orion`](https://github.com/kaushik0x7d2/orion)** &nbsp; `FHE` `PyTorch` `Go` `Security`
 >
 > Hardened FHE framework for private neural inference — security audit of ASPLOS'25 Best Paper, 8 vulnerability fixes, 88 adversarial tests, transformer support
