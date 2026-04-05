@@ -16,10 +16,6 @@
 >
 > End-to-end encrypted speaker verification using FHE — neural voice biometrics on fully encrypted audio, 100% FHE accuracy on LibriSpeech
 
-> **[`> Athena`](https://github.com/kaushik0x7d2/athena-fhe)** &nbsp; `FHE` `PyTorch` `Polynomial Optimization`
->
-> AI-driven polynomial discovery for FHE — learned degree-2 activation matches GELU on CIFAR-10 at depth 2, saving 3 FHE levels per inference
-
 > **[`> PROTAC Pipeline`](https://github.com/kaushik0x7d2/protac-pipeline)** &nbsp; `Drug Discovery` `SE3` `Diffusion`
 >
 > Automated PROTAC drug design pipeline — SE3 equivariant diffusion models with data leakage analysis
